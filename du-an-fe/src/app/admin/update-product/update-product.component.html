@@ -1,0 +1,57 @@
+<div class="add-product">
+  <h1 style="text-align: center;">Cập nhật sản phẩm</h1>
+  <form (ngSubmit)="onSubmit()">
+    <table>
+      <tr>
+        <td>Tên sản phẩm</td>
+        <td><input type="text" [(ngModel)] = "product.name" [ngModelOptions]="{standalone: true}" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></td>
+      </tr>
+      <br>
+      <tr>
+        <td>Ảnh hiển thị</td>
+        <td><input type="text" [(ngModel)] = "product.image" [ngModelOptions]="{standalone: true}" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></td>
+      </tr>
+      <br>
+      <tr>
+        <td>Ảnh chi tiết</td>
+        <td><input type="text" [(ngModel)] = "product.picture" [ngModelOptions]="{standalone: true}" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></td>
+      </tr>
+      <br>
+      <tr>
+        <td>Giá cũ</td>
+        <td><input type="text" [(ngModel)] = "product.price" [ngModelOptions]="{standalone: true}" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></td>
+      </tr>
+      <br>
+      <tr>
+        <td>Giá bán</td>
+        <td><input type="text" [(ngModel)] = "product.price_sale" [ngModelOptions]="{standalone: true}" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></td>
+      </tr>
+      <!-- <br>
+      <tr>
+        <td>Tình trạng</td>
+        <td><input type="text" [(ngModel)] = "product.status" [ngModelOptions]="{standalone: true}" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></td>
+      </tr> -->
+      <br>
+      <!-- <tr>
+        <td>Số lượng</td>
+        <td><input type="text" [(ngModel)] = "product.follow" [ngModelOptions]="{standalone: true}" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></td>
+      </tr>
+      <br> -->
+      <tr>
+        <td>Danh mục</td>
+        <td style="padding-left: 31px;">
+          <select [(ngModel)] = "product.category" [ngModelOptions]="{standalone: true}" style="width:599px; height: 35px;">
+            <option value="sac">Sạc</option>
+            <option value="tainghe">Tai nghe</option>
+            <option value="electronics">Điện thoại</option>
+          </select>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <div class="input-group mb-3">
+      <button class="btn btn-success" style="margin-left: 320px">Update</button>
+    </div>
+  </form>
+</div>
+

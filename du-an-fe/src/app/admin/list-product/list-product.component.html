@@ -1,0 +1,49 @@
+<div class="table">
+  <a href="" routerLink="create-product" style="text-decoration: none"><p style="font-size: 30px; color:blue"><i class="fa fa-plus"></i> Thêm sản phẩm</p></a>
+<table>
+  <tr style="height: 30px;">
+    <th style="width:5%">
+      <h4>ID</h4>
+    </th>
+    <th style="width: 20%;">
+      <h4>Tên sản phẩm</h4>
+    </th>
+    <th style="width: 30%; text-align: center;">
+      <h4>Ảnh sản phẩm</h4>
+    </th>
+    <th style="width: 15%;">
+      <h4>Giá bán</h4>
+    </th>
+    <th style="width: 15%;">
+      <h4 >Giá cũ</h4>
+    </th>
+    <th style="width: 30%;"  colspan="2">
+      <h4>Action</h4>
+    </th>
+  </tr>
+  <tr *ngFor="let item of filterCategory " style="padding-top: 500px ;">
+    <td>
+      {{item.id}}
+    </td>
+    <td>
+      {{item.name}}
+    </td>
+    <td style="text-align: center">
+      <img src="{{item.image}}" alt="" width="130px" height="130px">
+
+    </td>
+    <td>
+      {{item.price_sale}}$
+    </td>
+    <td>
+      {{item.price}}$
+    </td>
+    <td style="width: 15%;">
+      <button (click) = "updateProduct(item.id)" class="btn btn-info">Update</button><button (click) = "deleteProduct(item.id)"   class="btn btn-warning">Delete</button>
+    </td>
+    <td >
+
+    </td>
+  </tr>
+</table>
+</div>

@@ -1,0 +1,70 @@
+// body{
+// 	margin: 0;
+// 	padding:0;
+// 	background-size: cover;
+// 	background-position: center;
+// 	font-family: sans-serif;
+//     box-sizing: border-box;
+//     background: #ffffff;
+// }
+// .loginbox{
+// 	width: 320px;
+// 	background: #fff;
+// 	color: #000000;
+// 	top: 50%;
+// 	left: 50%;
+// 	position: absolute;
+// 	transform: translate(-50%,-50%);
+// 	padding: 30px;
+//     border-radius: 10px;
+//     box-shadow: 0 12px 16px #999;
+// }
+// h1{
+// 	margin: 0;
+// 	padding: 0 0 20px;
+// 	text-align: center;
+// 	font-size: 25px;
+// }
+// .loginbox .inp{
+//     width: 100%;
+//     margin-bottom: 20px;
+//     height: 40px;
+//     line-height: 40px;
+//     border-radius: 10px;
+//     border: 1px solid #9999;
+//     text-indent: 20px;
+//     font-size: 20px;
+// }
+
+// h1:hover{
+// 	color: skyblue;
+// }
+// ::placeholder{
+// 	font-size: 20px;
+// }
+#formContent{
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin: auto;
+  margin-top: 200px;
+}
+.loginbox .inp{
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 10px;
+    border: 1px solid #9999;
+    text-indent: 20px;
+    font-size: 20px;
+}
+.loginbox input[type="submit"]{
+	border: none;
+	outline: none;
+	height: 40px;
+	background:#a7d8dc;
+	font-size: 25px;
+	border-radius: 20px;
+	text-align: center;
+}

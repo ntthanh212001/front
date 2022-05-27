@@ -1,0 +1,136 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "iPhone tg",
+      "price": "1299",
+      "price_sale": 1199,
+      "status": true,
+      "image": "img/1.jpg",
+      "picture": "https://cdn.tgdd.vn/Products/Images/42/153856/Slider/vi-vn-iphone-11-tinhnang.jpg",
+      "follow": 883,
+      "category": "electronics"
+    },
+    {
+      "id": 2,
+      "name": "iPhone 13 Pro Max 128GB",
+      "price": 3099,
+      "price_sale": 2999,
+      "status": true,
+      "image": "img/2.jpg",
+      "picture": "img/detail1.jpg",
+      "follow": 447,
+      "category": "electronics"
+    },
+    {
+      "id": 3,
+      "name": "iPhone 12 Pro Max 512GB",
+      "price": 3099,
+      "price_sale": 2999,
+      "status": true,
+      "image": "img/3.jpg",
+      "picture": "https://cdn.tgdd.vn/Products/Images/42/228744/Slider/iphone-12-pro-max-512gb-281120-1232271.jpg",
+      "follow": 257,
+      "category": "electronics"
+    },
+    {
+      "id": 4,
+      "name": "iPhone 13 Pro 128GB",
+      "price": 2799,
+      "price_sale": 2699,
+      "status": true,
+      "image": "img/4.jpg",
+      "picture": "https://cdn.tgdd.vn/Products/Images/42/230521/Slider/vi-vn-iphone-13-pro-slider-camera.jpg",
+      "follow": 253,
+      "category": "electronics"
+    },
+    {
+      "id": 5,
+      "name": "iPhone 12 Pro 256GB",
+      "price": 2699,
+      "price_sale": 2599,
+      "status": true,
+      "image": "img/5.jpg",
+      "picture": "https://cdn.tgdd.vn/Products/Images/42/228738/Slider/iphone-12-pro-256gb-071220-0945170.jpg",
+      "follow": 883,
+      "category": "electronics"
+    },
+    {
+      "id": 6,
+      "name": "iPhone 13 Pro Max 256GB",
+      "price": 2099,
+      "price_sale": 1999,
+      "status": true,
+      "image": "img/6.jpg",
+      "picture": "https://cdn.tgdd.vn/Products/Images/42/250259/Slider/iphone-13-pro-slider-120hz-1020x570.jpg",
+      "follow": 100,
+      "category": "electronics"
+    },
+    {
+      "id": 7,
+      "name": "iPhone 13 Mini",
+      "price": 1999,
+      "price_sale": 1899,
+      "status": true,
+      "image": "img/7.jpg",
+      "picture": "https://cdn.tgdd.vn/Products/Images/42/236780/Slider/vi-vn-iphone-13-mini-slider-128gb.jpg",
+      "follow": 145,
+      "category": "electronics"
+    },
+    {
+      "id": 8,
+      "name": "iPhone 12 Pro Max 512GB",
+      "price": 1899,
+      "price_sale": 1799,
+      "status": true,
+      "image": "img/8.jpg",
+      "picture": "https://cdn.tgdd.vn/Products/Images/42/228739/Slider/iphone-12-pro-512gb-281120-1212534.jpg",
+      "follow": 324,
+      "category": "electronics"
+    },
+    {
+      "id": 9,
+      "name": "iPhone 12 Mini",
+      "price": 1799,
+      "price_sale": 1699,
+      "status": true,
+      "image": "img/9.jpg",
+      "picture": "https://cdn.tgdd.vn/Products/Images/42/225380/Slider/iphone-12-mini-thumbvideo-780x433-1.jpg",
+      "follow": 246,
+      "category": "electronics"
+    },
+    {
+      "id": 10,
+      "name": "iPhone XR 128GB",
+      "price": 1599,
+      "price_sale": 1499,
+      "status": true,
+      "image": "img/10.jpg",
+      "picture": "https://cdn.tgdd.vn/Products/Images/42/191483/Slider/-iphone-xr-thietke-2.jpg",
+      "follow": 124,
+      "category": "electronics"
+    },
+    {
+      "id": 11,
+      "name": "Tai nghe Bluetooth K8",
+      "price": 179,
+      "price_sale": 169,
+      "status": true,
+      "image": "img/tainghe1.jpg",
+      "picture": "https://cdn.tgdd.vn/Products/Images/54/235955/bluetooth-mozard-k8-hong-7-org.jpg",
+      "follow": 12,
+      "category": "tainghe"
+    },
+    {
+      "id": 12,
+      "name": "Tai nghe Gaming Asus",
+      "price": 223,
+      "price_sale": 212,
+      "status": true,
+      "image": "img/tainghe2.jpg",
+      "picture": "https://cdn.tgdd.vn/Products/Images/54/246765/Slider/vi-vn-ep-gaming-asus-rog-cetra-ii-core-den-thumbvideo.jpg",
+      "follow": 56,
+      "category": "sac"
+    }
+  ]
+}

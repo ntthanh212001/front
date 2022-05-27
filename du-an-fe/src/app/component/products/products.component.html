@@ -1,0 +1,154 @@
+<br><br>
+<div class="logo">
+  <div class="logo1">
+    <img src="img/logo1.jpg" alt="">
+  </div>
+  <div class="logoo">
+    <div class="logo2">
+      <img src="img/logo2.jpg" alt="">
+    </div>
+    <div class="logo3">
+      <img src="img/logo3.jpg" alt="">
+    </div>
+  </div>
+</div>
+<div class="card-top container-fluid">
+    <div class="container d-flex">
+        <div class="item">
+            <a (click)="filter('')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" width="70px" alt="">
+                <h3 style="margin-left: 15px">Tất cả</h3>
+            </a>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="item">
+            <a (click)="filter('electronics')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" width="70px" alt="">
+                <h3>Điện thoại</h3>
+            </a>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="item">
+            <a (click)="filter('phukien')">
+                <img style="margin-top: 18px;" src="https://cdn.tgdd.vn/Products/Images/54/187374/tai-nghe-bluetooth-kanen-k6-den-11-org.jpg" width="70px" alt="">
+                <h3 style="margin-top: 5px;">Phụ kiện</h3>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+      <table class="table_product">
+        <tbody class="">
+          <tr>
+            <td *ngFor="let product of filterCategory.slice(0,4)| filter:searchKey:'name'">
+              <img src="{{ product.image }}" alt="" width="200px" height="200px" /><br>
+              <p>
+                {{product.name}}
+              </p>
+              <p class="price">
+                <s>{{product.price_sale}}$</s> <br>
+                 {{product.price}}$
+
+              </p>
+              <p>
+                <i class="fa fa-star" style="color: orange;"></i>
+                <i class="fa fa-star" style="color: orange;"></i>
+                <i class="fa fa-star" style="color: orange;"></i>
+                <i class="fa fa-star" style="color: orange;"></i>
+                <i class="fa fa-star" style="color: orange;"></i>
+                {{product.follow}}
+              </p>
+              <button (click) = "detailProduct(product.id)"   class="btn btn-warning">Chi tiết</button>
+              &nbsp;&nbsp;
+              <button class="btn btn-primary" (click)=addtocart(product)>Thêm vào giỏ</button>
+
+            </td>
+          </tr>
+          <br>
+          <br>
+          <br>
+          <tr>
+            <td *ngFor="let product of filterCategory.slice(4,8)| filter:searchKey:'name'">
+              <img src="{{ product.image }}" alt="" width="200px" height="200px" /><br>
+              <p>
+                {{product.name}}
+              </p>
+              <p class="price">
+                <s>{{product.price_sale}}$</s> <br>
+                 {{product.price}}$
+
+              </p>
+              <p>
+                <i class="fa fa-star" style="color: orange;"></i>
+                <i class="fa fa-star" style="color: orange;"></i>
+                <i class="fa fa-star" style="color: orange;"></i>
+                <i class="fa fa-star" style="color: orange;"></i>
+                <i class="fa fa-star-o"></i>
+                {{product.follow}}
+              </p>
+              <button (click) = "detailProduct(product.id)" class="btn btn-warning">Chi tiết</button>
+              &nbsp;&nbsp;
+              <button class="btn btn-primary" (click)=addtocart(product)>Thêm vào giỏ</button>
+            </td>
+          </tr>
+          <br>
+          <br>
+          <br>
+          <tr>
+            <td *ngFor="let product of filterCategory.slice(8,12)| filter:searchKey:'name'">
+              <img src="{{ product.image }}" alt="" width="200px" height="200px" /><br>
+              <p>
+                {{product.name}}
+              </p>
+              <p class="price">
+                <s>{{product.price_sale}}$</s> <br>
+                 {{product.price}}$
+
+              </p>
+              <p>
+                <i class="fa fa-star" style="color: orange;"></i>
+                <i class="fa fa-star" style="color: orange;"></i>
+                <i class="fa fa-star" style="color: orange;"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                {{product.follow}}
+              </p>
+              <button (click) = "detailProduct(product.id)"   class="btn btn-warning">Chi tiết</button>
+              &nbsp;&nbsp;
+              <button class="btn btn-primary" (click)=addtocart(product)>Thêm vào giỏ</button>
+            </td>
+          </tr>
+          <br>
+          <br>
+          <br>
+          <tr>
+            <td *ngFor="let product of filterCategory.slice(12,16)| filter:searchKey:'name'">
+              <img src="{{ product.image }}" alt="" width="200px" height="200px" /><br>
+              <p>
+                {{product.name}}
+              </p>
+              <p class="price">
+                <s>{{product.price_sale}}$</s> <br>
+                 {{product.price}}$
+
+              </p>
+              <p>
+                <i class="fa fa-star" style="color: orange;"></i>
+                <i class="fa fa-star" style="color: orange;"></i>
+                <i class="fa fa-star" style="color: orange;"></i>
+                <i class="fa fa-star-o"></i>
+                <i class="fa fa-star-o"></i>
+                {{product.follow}}
+              </p>
+              <button (click) = "detailProduct(product.id)"   class="btn btn-warning">Chi tiết</button>
+              &nbsp;&nbsp;
+              <button class="btn btn-primary" (click)=addtocart(product)>Thêm vào giỏ</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+<br>
+<br><br>

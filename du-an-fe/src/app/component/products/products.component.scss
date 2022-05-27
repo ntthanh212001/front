@@ -1,0 +1,59 @@
+.card-top {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: .25rem;
+}
+
+.product img {
+  width: 64px;
+}
+
+.product {
+  margin: 0px 15px;
+  text-align: center;
+}
+
+.item a:hover {
+  color: blue;
+}
+
+.row {
+  padding: 20px;
+  margin: 50px;
+}
+
+.row img {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+  transition: 0.3s ease-in-out;
+}
+
+.row img:hover {
+  transition: 0.3s ease-in-out;
+  transform: scale(1.1);
+}
+
+.logo {
+  width: 80%;
+  display: block;
+  margin: auto;
+  margin-top: 8px;
+  background-color: white;
+}
+.logo1 {
+  width: 820px;
+  height: 200px;
+  float: left;
+}
+.logoo {
+  width: 100px;
+  float: left;
+
+}

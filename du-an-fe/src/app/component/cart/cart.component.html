@@ -1,0 +1,58 @@
+<ng-container *ngIf="products.length !=0">
+    <div class="container">
+        <div class="card-table">
+            <div class="cart-product">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Ảnh sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Số lượng</th>
+                            <th>Tổng tiền</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of products; let i = index">
+                            <td>{{i+1}}</td>
+                            <td>{{item.name}}</td>
+                            <td><img style="width: 120px;" src="{{item.image}}" alt=""></td>
+                            <th style="width: 12%;">{{item.price}}$</th>
+                            <td style="width: 12%;">
+                              <input type="text" value="{{item.quantity}}" (blur)="handleBlur($event)">
+                            </td>
+                            <td style="width: 12%;">{{item.total}}$</td>
+                            <td>
+                                <button (click)="removeItem(item)" class="btn btn-danger"><i class="fas fa-trash-alt"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"></td>
+                            <td><button (click)="emptycart()" class="btn btn-danger">Cancel</button></td>
+                            <td><button routerLink="/products" class="btn btn-primary">Mua sắm</button></td>
+                            <td><button class="btn btn-success">Checkout</button></td>
+                            <td><strong>TỔNG TIỀN {{grandTotal}}$</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</ng-container>
+
+
+<ng-container *ngIf="products.length == 0">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title">Giỏ hàng</h5>
+        </div>
+        <div class="center">
+            <img src="https://rukminim1.flixcart.com/www/800/800/promos/16/05/2019/d438a32e-765a-4d8b-b4a6-520b560971e8.png?q=90" alt="">
+            <h4>Giỏ hàng của bạn đang trống!</h4>
+            <h6>Thêm sản phẩm vào giỏ hàng</h6>
+            <button routerLink="/products" class="btn btn-primary">Mua sắm ngay</button>
+        </div>
+    </div>
+</ng-container>
